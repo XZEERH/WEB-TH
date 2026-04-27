@@ -1,6 +1,6 @@
 body {
-    background-color: #0b0f19;
-    color: #fff;
+    background-color: #f3f4f6;
+    color: #000;
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -12,36 +12,36 @@ body {
     padding: 20px;
 }
 .admin-container {
-    background-color: #1a2235;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 15px;
-    border: 1px solid #00f0ff;
+    border: 1px solid #d1d5db;
     width: 100%;
     max-width: 450px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.8s ease-out;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-h1 { color: #00f0ff; margin-bottom: 5px; font-size: 28px;}
-p { color: #aaa; margin-bottom: 20px; }
+h1 { color: #000; margin-bottom: 5px; font-size: 32px;}
+p { color: #6b7280; margin-bottom: 20px; }
 form { display: flex; flex-direction: column; gap: 15px; }
 input, textarea {
-    background-color: #0b0f19;
-    color: #fff;
-    border: 1px solid #333;
+    background-color: #f9fafb;
+    color: #000;
+    border: 1px solid #d1d5db;
     padding: 15px;
     border-radius: 8px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 16px;
 }
-input:focus, textarea:focus { outline: none; border-color: #00f0ff; box-shadow: 0 0 5px rgba(0,240,255,0.5); }
+input:focus, textarea:focus { outline: none; border-color: #000; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
 button {
-    background-color: #00f0ff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -50,16 +50,14 @@ button {
     font-size: 18px;
     transition: all 0.3s;
 }
-button:hover { background-color: #fff; transform: scale(1.02); }
+button:hover { background-color: #374151; transform: scale(1.02); }
 .footer-links {
-    display: flex;
-    justify-content: space-between;
     margin-top: 25px;
 }
-.back-btn, .next-btn {
-    color: #00f0ff;
+.back-btn {
+    color: #4b5563;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
-.back-btn:hover, .next-btn:hover { color: #fff; }
+.back-btn:hover { color: #000; text-decoration: underline; }
