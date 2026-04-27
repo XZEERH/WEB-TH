@@ -24,5 +24,6 @@ export default function Typewriter() {
     return () => clearTimeout(timeout);
   },[subIndex, index, reverse]);
 
-  return <span className="text-neonBlue tracking-wider">{`${words[index].substring(0, subIndex)}|`}</span>;
+  // Hapus neonBlue, ganti jadi teks hitam pekat
+  return <span className="text-black tracking-wider">{`${words[index].substring(0, subIndex)}|`}</span>;
 }
