@@ -10,21 +10,35 @@
 <body>
     <div class="admin-container">
         <h1>Dashboard Admin Media</h1>
-        <p>Upload informasi terkini media global di sini.</p>
+        <p>Upload & Kelola informasi terkini media global di sini.</p>
         
         <form id="uploadForm">
             <input type="text" id="judul" placeholder="Judul Artikel" required>
-            <input type="url" id="gambar" placeholder="Link Gambar (URL)" required>
+            
+            <!-- Input Gambar & Tombol Auto Unsplash -->
+            <div class="input-group">
+                <input type="url" id="gambar" placeholder="Link Gambar (URL)" required>
+                <button type="button" id="btnUnsplash" class="unsplash-btn">📸 Auto Unsplash (Tema Sejarah)</button>
+            </div>
+
             <textarea id="deskripsi" placeholder="Penjelasan / Deskripsi" required rows="4"></textarea>
             <input type="url" id="link" placeholder="Link Artikel Lengkap" required>
-            <button type="submit">Upload Informasi Ke Server</button>
+            <button type="submit" id="submitBtn">Upload Informasi Ke Server</button>
         </form>
+
+        <hr class="divider">
+
+        <!-- Fitur Hapus (Daftar Media) -->
+        <h2>Kelola / Hapus Media</h2>
+        <div id="mediaList" class="media-list">
+            <p style="color: #6b7280; font-size: 14px;">Memuat data dari server...</p>
+        </div>
 
         <div class="footer-links">
             <a href="/" class="back-btn">← Kembali ke Website Utama</a>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
