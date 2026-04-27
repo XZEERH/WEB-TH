@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Admin TH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Dashboard Admin Media</h1>
+        <p>Upload informasi terkini media global di sini.</p>
+        
+        <form id="uploadForm">
+            <input type="text" id="judul" placeholder="Judul Artikel" required>
+            <input type="url" id="gambar" placeholder="Link Gambar (URL)" required>
+            <textarea id="deskripsi" placeholder="Penjelasan / Deskripsi" required rows="4"></textarea>
+            <input type="url" id="link" placeholder="Link Artikel Lengkap" required>
+            <button type="submit">Upload Informasi Ke Server</button>
+        </form>
+
+        <div class="footer-links">
+            <a href="/" class="back-btn">← Kembali ke Website Utama</a>
+            <!-- Lanjut ke halaman selanjutnya (Sesuai urutan menu) -->
+            <a href="/tentang" class="next-btn">Halaman Berikutnya →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
