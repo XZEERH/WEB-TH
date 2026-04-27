@@ -43,13 +43,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      {/* Header Terang - Logo Full & Typewriter */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-300 shadow-sm">
-        <div className="flex items-center justify-between px-4 py-3 relative">
+      
+      {/* HEADER: Fitur "sticky" Dihapus agar diam di tempat (tidak ngikut saat di-scroll) */}
+      <header className="relative z-40 bg-white border-b border-gray-300 shadow-sm">
+        <div className="flex items-center justify-between px-4 py-2 relative">
           
-          {/* BAGIAN LOGO: Dibuat full tanpa border/kotak pembatas agar tampil maksimal */}
-          <div className="w-32 h-16 md:w-40 md:h-20 flex-shrink-0 flex items-center">
-            {/* Pastikan file gambar ada di folder public/assets/favicon-th.jpg */}
+          {/* Logo */}
+          <div className="w-28 h-14 md:w-40 md:h-20 flex-shrink-0 flex items-center">
             <img 
               src="/assets/favicon-th.jpg" 
               alt="Logo TH" 
@@ -57,8 +57,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             />
           </div>
 
-          {/* Teks Ngetik (Desktop) */}
-          <div className="hidden md:block absolute left-1/2 -translate-x-1/2 text-2xl md:text-3xl font-extrabold text-black">
+          {/* Teks Ngetik (Desktop) - Diperbesar (text-3xl) */}
+          <div className="hidden md:block absolute left-1/2 -translate-x-1/2 text-3xl font-extrabold text-black">
             <Typewriter />
           </div>
 
@@ -68,8 +68,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </button>
         </div>
 
-        {/* Teks Ngetik (Mobile) - Supaya jelas dan full di dekat logo */}
-        <div className="md:hidden text-center pb-3 pt-1 text-xl font-extrabold text-black border-t border-gray-100 mt-2">
+        {/* Teks Ngetik (Mobile) - Dinaikkan dan Diperbesar (text-2xl) */}
+        <div className="md:hidden text-center pb-4 pt-0 text-2xl font-extrabold text-black">
           <Typewriter />
         </div>
 
