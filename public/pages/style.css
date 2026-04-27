@@ -6,10 +6,10 @@ body {
     font-style: italic;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Ubah biar bisa di-scroll ke bawah */
     min-height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
 }
 .admin-container {
     background-color: #ffffff;
@@ -17,7 +17,7 @@ body {
     border-radius: 15px;
     border: 1px solid #d1d5db;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.8s ease-out;
@@ -27,8 +27,10 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 h1 { color: #000; margin-bottom: 5px; font-size: 32px;}
+h2 { color: #000; font-size: 24px; margin-bottom: 15px; }
 p { color: #6b7280; margin-bottom: 20px; }
 form { display: flex; flex-direction: column; gap: 15px; }
+.input-group { display: flex; flex-direction: column; gap: 8px; }
 input, textarea {
     background-color: #f9fafb;
     color: #000;
@@ -51,13 +53,23 @@ button {
     transition: all 0.3s;
 }
 button:hover { background-color: #374151; transform: scale(1.02); }
-.footer-links {
-    margin-top: 25px;
+
+/* Tombol Khusus Unsplash */
+.unsplash-btn {
+    background-color: #4b5563;
+    padding: 10px;
+    font-size: 14px;
 }
-.back-btn {
-    color: #4b5563;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
+.unsplash-btn:hover { background-color: #1f2937; }
+
+/* Pembatas & List Media (Fitur Hapus) */
+.divider { border: 0; border-top: 1px solid #e5e7eb; margin: 30px 0; }
+.media-list { display: flex; flex-direction: column; gap: 10px; text-align: left; max-height: 300px; overflow-y: auto; padding-right: 5px; }
+.media-item { background: #f9fafb; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.media-item-info h3 { margin: 0; font-size: 16px; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;}
+.delete-btn { background-color: #ef4444; color: white; padding: 8px 12px; font-size: 14px; border-radius: 5px; }
+.delete-btn:hover { background-color: #dc2626; transform: none; }
+
+.footer-links { margin-top: 25px; }
+.back-btn { color: #4b5563; text-decoration: none; font-size: 16px; transition: color 0.3s; }
 .back-btn:hover { color: #000; text-decoration: underline; }
