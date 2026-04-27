@@ -6,11 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        darkBg: '#0b0f19',
-        neonBlue: '#00f0ff',
-        darkCard: '#1a2235',
-      },
       fontFamily: {
         futuristic:['Rajdhani', 'sans-serif'],
       },
