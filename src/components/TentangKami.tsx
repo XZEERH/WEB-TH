@@ -21,7 +21,7 @@ export default function TentangKami() {
       <div className="flex space-x-6 md:space-x-8 mt-10 flex-wrap justify-center gap-y-4">
         
         {/* TikTok */}
-        <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
+        <a href="https://tiktok.com/@teaching.of.history" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
           <svg className="w-10 h-10 md:w-12 md:h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.78-1.15 5.54-3.33 7.31-1.92 1.57-4.58 2.22-6.99 1.64-2.61-.62-4.9-2.6-5.59-5.18-.74-2.76.01-5.83 2.15-7.7 2.01-1.74 4.88-2.3 7.42-1.58.05 1.45.02 2.91.03 4.36-1.32-.42-2.85-.31-4.04.41-1.07.65-1.77 1.83-1.8 3.09-.04 1.34.56 2.68 1.63 3.48 1.36 1 3.32 1.05 4.69.1 1.22-.85 1.88-2.32 1.87-3.79-.02-5.71-.01-11.43-.01-17.14h-.05z"/>
           </svg>
