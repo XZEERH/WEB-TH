@@ -9,29 +9,41 @@
 </head>
 <body>
     <div class="admin-container">
-        <h1>Dashboard Admin Media</h1>
-        <p>Upload & Kelola informasi terkini media global di sini.</p>
         
-        <form id="uploadForm">
-            <input type="text" id="judul" placeholder="Judul Artikel" required>
+        <!-- BAGIAN 1: FORM LOGIN (Awalnya ini yang muncul) -->
+        <div id="loginSection">
+            <h1>Login Admin TH</h1>
+            <p style="color: #ef4444; font-size: 14px;">Area Terlarang! Hanya Admin Resmi.</p>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email Admin" required>
+                <input type="password" id="loginPassword" placeholder="Password Admin" required>
+                <button type="submit">Akses Dashboard</button>
+            </form>
+        </div>
+
+        <!-- BAGIAN 2: DASHBOARD UPLOAD (Awalnya Disembunyikan) -->
+        <div id="dashboardSection" style="display: none;">
+            <h1>Dashboard Media</h1>
+            <p>Upload & Kelola informasi terkini media global.</p>
             
-            <!-- Input Gambar & Tombol Auto Unsplash -->
-            <div class="input-group">
-                <input type="url" id="gambar" placeholder="Link Gambar (URL)" required>
-                <button type="button" id="btnUnsplash" class="unsplash-btn">📸 Auto Unsplash (Tema Sejarah)</button>
+            <form id="uploadForm">
+                <input type="text" id="judul" placeholder="Judul Artikel" required>
+                <div class="input-group">
+                    <input type="url" id="gambar" placeholder="Link Gambar (URL)" required>
+                    <button type="button" id="btnUnsplash" class="unsplash-btn">📸 Auto Unsplash Sejarah</button>
+                </div>
+                <textarea id="deskripsi" placeholder="Penjelasan / Deskripsi" required rows="4"></textarea>
+                <input type="url" id="link" placeholder="Link Artikel Lengkap" required>
+                <button type="submit" id="submitBtn">Upload Informasi</button>
+            </form>
+
+            <hr class="divider">
+            <h2>Kelola / Hapus Media</h2>
+            <div id="mediaList" class="media-list">
+                <p style="color: #6b7280; font-size: 14px;">Memuat data dari server...</p>
             </div>
-
-            <textarea id="deskripsi" placeholder="Penjelasan / Deskripsi" required rows="4"></textarea>
-            <input type="url" id="link" placeholder="Link Artikel Lengkap" required>
-            <button type="submit" id="submitBtn">Upload Informasi Ke Server</button>
-        </form>
-
-        <hr class="divider">
-
-        <!-- Fitur Hapus (Daftar Media) -->
-        <h2>Kelola / Hapus Media</h2>
-        <div id="mediaList" class="media-list">
-            <p style="color: #6b7280; font-size: 14px;">Memuat data dari server...</p>
+            
+            <button id="logoutBtn" style="background-color: #ef4444; margin-top: 15px; width: 100%;">Keluar (Logout)</button>
         </div>
 
         <div class="footer-links">
