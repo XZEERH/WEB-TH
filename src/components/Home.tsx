@@ -10,7 +10,7 @@ export default function Home() {
     "https://www.image2url.com/r2/default/images/1777369169374-7c1c487e-0cf9-4181-888a-42bba5a3bfc4.jpg",
     "https://www.image2url.com/r2/default/images/1777369062655-98cec5db-8147-470b-94ed-79eaa318c9fb.jpg",
     "https://www.image2url.com/r2/default/images/1777368929913-631bd5a5-6d34-45c1-aee8-af28bc269de0.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ortelius_World_Map.jpeg/800px-Ortelius_World_Map.jpeg" // Peta Sejarah Dunia Ortelius dari Wikipedia
+    "https://www.image2url.com/r2/default/images/1777452847589-080e23ba-01d4-45d8-b4cd-4c865d4e7fc2.jpg"
   ];
 
   return (
