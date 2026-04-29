@@ -34,7 +34,7 @@ export default function StrukturAdmin() {
       <div className="bg-white p-8 rounded-xl border border-gray-200 mt-8">
         <h2 className="text-3xl text-black mb-6 text-center">Daftar Nama Admin Lengkap</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {["Razeerh (Founder)", "Admin Alpha", "Admin Beta", "Admin Charlie", "Admin Delta", "Admin Echo", "Admin Foxtrot", "Admin Ghost"].map((nama, idx) => (
+          {["Razeerh (Founder web)", "Gerald (Owner TH)", "Admin Not Found!", "Admin Not Found!", "Admin Not Found!", "Admin Not Found!", "Admin Not Found!", "Admin Not Found!"].map((nama, idx) => (
             <div key={idx} className="p-4 border border-gray-300 rounded-lg bg-gray-50 hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 shadow-sm">
               {nama}
             </div>
