@@ -1,12 +1,10 @@
 export default function TentangKami() {
   return (
     <div className="max-w-4xl mx-auto space-y-8 flex flex-col items-center animate-fade-in">
-      {/* Tanpa shadow, teks murni hitam */}
       <h1 className="text-4xl md:text-5xl text-black font-extrabold text-center mb-8">
         Tentang Komunitas TH
       </h1>
       
-      {/* Box deskripsi: Background abu-abu muda, teks hitam solid */}
       <div className="space-y-6 text-black font-bold text-justify md:text-lg bg-gray-100 p-8 md:p-12 rounded-2xl border border-gray-300 shadow-sm">
         <p>
           Komunitas TH adalah aliansi digital global yang terbentuk dari individu-individu visioner. Kami berfokus pada pertukaran ide, penyebaran informasi faktual, serta pengembangan teknologi berbasis komunitas. TH hadir sebagai rumah bagi para pemikir kritis di era modernisasi.
@@ -19,18 +17,37 @@ export default function TentangKami() {
         </p>
       </div>
 
-      {/* Social Media Links - Solid Black */}
-      <div className="flex space-x-8 mt-10">
+      {/* Social Media Links - TikTok, Instagram, WhatsApp, YouTube */}
+      <div className="flex space-x-6 md:space-x-8 mt-10 flex-wrap justify-center gap-y-4">
+        
+        {/* TikTok */}
         <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
-          <svg className="w-12 h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-10 h-10 md:w-12 md:h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.78-1.15 5.54-3.33 7.31-1.92 1.57-4.58 2.22-6.99 1.64-2.61-.62-4.9-2.6-5.59-5.18-.74-2.76.01-5.83 2.15-7.7 2.01-1.74 4.88-2.3 7.42-1.58.05 1.45.02 2.91.03 4.36-1.32-.42-2.85-.31-4.04.41-1.07.65-1.77 1.83-1.8 3.09-.04 1.34.56 2.68 1.63 3.48 1.36 1 3.32 1.05 4.69.1 1.22-.85 1.88-2.32 1.87-3.79-.02-5.71-.01-11.43-.01-17.14h-.05z"/>
           </svg>
         </a>
+        
+        {/* Instagram */}
         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
-          <svg className="w-12 h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-10 h-10 md:w-12 md:h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
           </svg>
         </a>
+
+        {/* WhatsApp */}
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
+          <svg className="w-10 h-10 md:w-12 md:h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.031 0C5.385 0 0 5.388 0 12.035c0 2.124.553 4.195 1.602 6.012L.15 24l6.108-1.597c1.76.953 3.738 1.455 5.77 1.455h.004c6.645 0 12.033-5.388 12.033-12.034C24.065 5.388 18.678 0 12.031 0zM12.031 21.84h-.003c-1.796 0-3.555-.48-5.093-1.39l-.365-.216-3.782.99.993-3.69-.237-.378a10.007 10.007 0 01-1.531-5.35c0-5.526 4.498-10.024 10.023-10.024 5.524 0 10.02 4.498 10.02 10.024 0 5.525-4.496 10.023-10.019 10.023zM17.53 14.337c-.302-.151-1.785-.882-2.062-.982-.277-.1-.478-.151-.68.151-.201.302-.78 .982-.957 1.183-.176.202-.353.227-.655.076-.302-.151-1.274-.47-2.428-1.503-.898-.805-1.504-1.8-1.68-2.102-.176-.302-.019-.465.132-.616.136-.136.302-.352.453-.529.151-.176.202-.301.302-.503.101-.202.05-.378-.025-.529-.076-.151-.68-1.637-.932-2.242-.246-.59-.495-.51-.68-.52-.176-.01-.378-.01-.58-.01-.201 0-.528.076-.805.378-.277.302-1.057 1.033-1.057 2.518s1.082 2.919 1.233 3.12c.151.202 2.128 3.247 5.155 4.551 2.454 1.057 3.245 1.157 4.15 1.082.905-.075 2.128-.868 2.429-1.708.302-.84.302-1.56.202-1.71-.1-.15-.302-.252-.604-.403z"/>
+          </svg>
+        </a>
+
+        {/* YouTube */}
+        <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-black hover:scale-110 transition-transform duration-300">
+          <svg className="w-10 h-10 md:w-12 md:h-12 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+
       </div>
     </div>
   );
