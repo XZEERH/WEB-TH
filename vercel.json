@@ -1,14 +1,5 @@
 {
-  "cleanUrls": true,
-  "rewrites":[
-    {
-      "source": "/pages/:match*",
-      "destination": "/pages/:match*"
-    },
-    {
-      "source": "/assets/:match*",
-      "destination": "/assets/:match*"
-    },
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
