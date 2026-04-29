@@ -1,14 +1,13 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites":[
     {
-      "source": "/pages/(.*)",
-      "destination": "/pages/$1"
+      "source": "/pages/:match*",
+      "destination": "/pages/:match*"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
+      "source": "/assets/:match*",
+      "destination": "/assets/:match*"
     },
     {
       "source": "/(.*)",
